@@ -269,14 +269,13 @@
 
     @media print {
             /* Đảm bảo rằng toàn bộ nội dung hiển thị khi in */
-            .cvo-clickable-link {
-                color: inherit !important;
-                display: inline-block;
-                word-break: break-all; /* Giúp văn bản xuống dòng khi cần thiết */
-                overflow: hidden; /* Ẩn phần nội dung vượt quá kích thước khung */
-                white-space: normal; /* Cho phép xuống dòng */
-            }
-
+                .cvo-clickable-link {
+        color: inherit !important;
+        display: inline;
+        word-break: normal;      /* bỏ break-all */
+        overflow: visible;
+        white-space: nowrap;     /* không cho xuống dòng */
+    }
             /* Hiển thị tất cả các thẻ span */
             span {
                 display: inline;
